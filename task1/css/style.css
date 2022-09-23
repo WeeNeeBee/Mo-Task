@@ -18,7 +18,11 @@ body{
     font-family: 'Merriweather';
 
 }
-p, h3, h4 {
+#colorCode{
+    margin: 1rem 0;
+    color: white;
+}
+h3, h4 {
     margin: 1rem auto;
     text-align: center;
     color: rgb(102, 90, 90);
@@ -43,7 +47,7 @@ input, textarea {
     cursor: pointer;
 }
 .new-btn {
-    margin: 1rem;
+    margin: 5rem;
 }
 
 /* Input button hover effect */

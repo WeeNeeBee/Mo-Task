@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #eee;
+    font-family: 'Merriweather';
+
+}
+h3, h4 {
+    margin: 1rem auto;
+    text-align: center;
+    color: rgb(102, 90, 90);
+}
+
+input{
+    display: none;
+}
+.hex-value{
+    color: white;
+    padding: 0.7rem 0;
+}
+
+/* General button style */
+.btn{
+    background: transparent;
+    color: rgb(250, 171, 171);
+    border: 1px solid rgb(250, 199, 199);
+    padding: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+.new-btn {
+    margin: 5rem;
+}
+
+/* Color me section */
+
+#color{
+    width: 20rem;
+    padding: 4rem;
+    font-family: Calibri;
+    font-size: 1rem;
+    margin: 2rem auto;
+    border: 2px solid black;
+    border-radius: 50% 0 50% 0;
+}

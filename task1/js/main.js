@@ -65,15 +65,32 @@ function showGreetSection(){
 }
 setTimeout(showGreetSection, 1500);
 
+// Another color section
+
+    
 
 // Color Section
-    let colors = ['red', 'blue', 'green', 'purple', 'black', 'cyan', 'brown', 'white', 'orange'];
-    let btn3 = document.getElementById('btn3');
+    // let colors = ['red', 'blue', 'green', 'purple', 'black', 'cyan', 'brown', 'white', 'orange'];
     
+
+    
+    let red, blue, green;
+    let btn3 = document.getElementById('btn3');
+    let hexValue = document.getElementById('hexValue');
+    
+
     btn3.addEventListener('click', function(){
-        let randomColor = colors[Math.floor(Math.random() * colors.length)]
+        // let randomColor = colors[Math.floor(Math.random() * colors.length)]
+        let red, blue, green;
+        red = Math.floor(Math.random() * 256);
+        blue = Math.floor(Math.random() * 256);
+        green = Math.floor(Math.random() * 256);
+        
+        let randomColor = `rgb(${red},${blue},${green})`
         let color = document.getElementById('color');
         color.style.background = randomColor;
+        hexValue.innerHTML = randomColor;
+        console.log(randomColor);
     })
 // color transition
 let showColor = document.getElementById('color');
@@ -82,3 +99,22 @@ function showColorSection(){
 }
 
 setTimeout(showColorSection, 1500);
+
+// btn3.addEventListener('click', function(){
+//     a = hex[Math.floor(Math.random() * hex.length)];
+//     b = hex[Math.floor(Math.random() * hex.length)];
+//     c = hex[Math.floor(Math.random() * hex.length)];
+//     d = hex[Math.floor(Math.random() * hex.length)];
+//     e = hex[Math.floor(Math.random() * hex.length)];
+//     f = hex[Math.floor(Math.random() * hex.length)];
+
+//     let randomColor = `#${a}${b}${c}${d}${e}${f}`
+
+        
+//         let color = document.getElementById('color');
+//         color.style.background = randomColor;
+//         hexValue.innerHTML = randomColor;
+//         console.log(randomColor);
+//     })
+
+
