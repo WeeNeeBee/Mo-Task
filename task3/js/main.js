@@ -7,7 +7,7 @@ btn.addEventListener('click', function(){
     color.style.background = searchColor;
     
 
-    if(searchColor !== color.style.background || searchColor == ""){
+    if(searchColor.toLowerCase() !== color.style.background || searchColor == ""){
        errorMessage.innerHTML = "Please enter a valid color."
     }
     else {
